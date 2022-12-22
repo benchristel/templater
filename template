@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+content = STDIN.read
+template_filename = ARGV[0]
+template = File.read template_filename
+STDOUT.write template.sub("$$1$$", content)
